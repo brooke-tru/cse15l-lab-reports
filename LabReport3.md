@@ -57,22 +57,23 @@ Caused by: java.lang.AssertionError: expected:<5> but was:<0>
   }
 ```
 
-*  Here is the JUnit result which proves that this test doesn't result in a failure:
-```
-JUnit version 4.13.2
-..E...
-Time: 0.013
-There was 1 failure:
-1) testAverageWithoutLowest(ArrayTests)
-java.lang.AssertionError: expected:<true> but was:<false>
-        at org.junit.Assert.fail(Assert.java:89)
-        at org.junit.Assert.failNotEquals(Assert.java:835)
-        at org.junit.Assert.assertEquals(Assert.java:120)
-        at org.junit.Assert.assertEquals(Assert.java:146)
-        at ArrayTests.testAverageWithoutLowest(ArrayTests.java:34)
+*  Here is the JUnit result which proves that this test doesn't fail:
 
-FAILURES!!!
-Tests run: 5,  Failures: 1
+```
+  JUnit version 4.13.2
+  ..E...
+  Time: 0.013
+  There was 1 failure:
+  1) testAverageWithoutLowest(ArrayTests)
+  java.lang.AssertionError: expected:<true> but was:<false>
+          at org.junit.Assert.fail(Assert.java:89)
+          at org.junit.Assert.failNotEquals(Assert.java:835)
+          at org.junit.Assert.assertEquals(Assert.java:120)
+          at org.junit.Assert.assertEquals(Assert.java:146)
+          at ArrayTests.testAverageWithoutLowest(ArrayTests.java:34)
+  
+  FAILURES!!!
+  Tests run: 5,  Failures: 1
 ```
 
 * The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
