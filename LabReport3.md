@@ -58,7 +58,6 @@ Caused by: java.lang.AssertionError: expected:<5> but was:<0>
 ```
 
 *  Here is the JUnit result which proves that this test doesn't fail:
-
 ```
   JUnit version 4.13.2
   ..E...
@@ -78,6 +77,7 @@ Caused by: java.lang.AssertionError: expected:<5> but was:<0>
 
 * The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
 * Here is the code before the fix:
+
 ```
   static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
