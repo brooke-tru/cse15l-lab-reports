@@ -1,9 +1,12 @@
+# `StringServer` code
+![string-server-code](https://github.com/brooke-tru/cse15l-lab-reports/assets/146862163/13d8814a-a28a-41c9-a9b4-9c328c743138)
+
 # Part 1
 # `/add-message` Example 1
 ![add-message1](https://github.com/brooke-tru/cse15l-lab-reports/assets/146862163/30b31aad-fb5d-4206-9861-b42f6c4bfd8e)
 * Which methods in your code are called? `public String handleRequest(URI url)`
 * What are the relevant arguments to those methods, and the values of any relevant fields of the class? The argument in the method is URI url. The values I have are String s and URI url.
-* How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why. Changing url can do a few different things depending on what request was made. Starting with the path, `/add-message?s=My name is Brooke` the string "My name is Brooke" gets added and assigned to the variable s in my code. Depending on what comes after the '=' is what gets added and assigned to s, and adding "My name is Brooke" shows how s was changed. If I attempt to call `/add-message?s=` I get a 404 Not Found message because I didn't give a string to be added, hence the name of the path /add. I can completely take away the path and it will just continue to show the contents of String s on the page. 
+* How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why. Changing url can do a few different things depending on what request was made. Starting with the path, `/add-message?s=My name is Brooke` the string "My name is Brooke" gets added and assigned to the variable s in my code. Depending on what comes after the '=' is what gets added and assigned to s, and adding "My name is Brooke" shows how s was changed. If I attempt to call `/add-message?s=` I get a 404 Not Found message because I didn't give a string to be added, hence the name of the path `/add`. I can completely take away the path and it will just continue to show the contents of String s on the page. 
 
 # `/add-message` Example 2
 ![add-message2](https://github.com/brooke-tru/cse15l-lab-reports/assets/146862163/bed9c5f3-40bf-4669-8288-84014c0e9e2a)
@@ -17,6 +20,7 @@
 ![ls private key](https://github.com/brooke-tru/cse15l-lab-reports/assets/146862163/45825a07-248b-4f1c-a639-65f47ff8372f)
 
 * The path to the public key for your SSH key for logging into ieng6 (within your account on ieng6)
+* The path to the public key for my SSH key is `/.ssh/authorized_keys`.
 ![ls public key](https://github.com/brooke-tru/cse15l-lab-reports/assets/146862163/bd90ff8a-82d0-40b6-924b-1b9532a19364)
 
 * A terminal interaction where you log into ieng6 with your course-specific account without being asked for a password.
