@@ -1,6 +1,3 @@
-Symptom: The behavior you see (terminal output, error messages, web page contents)
-Bug: A slaw in the program that causes the symptom
-
 1. The original post from a student with a screenshot showing a symptom and a description of a guess at the bug/some sense of what the failure-inducing input is. Describing the bug should involve reading some output at the terminal resulting from running one or more commands. 
 ![original post](https://github.com/brooke-tru/cse15l-lab-reports/assets/146862163/15133f6b-861d-4de8-bb3a-848624075226)
 
